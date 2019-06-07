@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pesquisa Mídias</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+
+<body>
+    <main>
+        <!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
+        <h1 id="title">
+            Pesquisa: Meios de Informação
+        </h1>
+        <!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
+        <p id="description">
+            Pesquisa destinada a coletar dados sobre os meios pelos quais brasileiros, e estrangeiros que vivem no
+            Brasil, se informam.
+        </p>
+        <!-- User Story #3: I can see a form with id="survey-form". -->
+        <form id="survey-form">
+
+            <!-- User Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label". -->
+            <!-- User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field. -->
+
+            <!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+            <div class="caixas">
+                <label id="name-label" for="name">Nome:</label>
+                <input id="name" type="text" name="name" placeholder="Nome Completo" required>
+            </div>
+
+            <!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
+            <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+            <div class="caixas">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            <!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
+            <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+            <!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+            <div class="caixas">
+                <label id="number-label" for="number">Idade</label>
+                <input type="number" id="number" name="idade" min="5" max="130" placeholder="25">
+            </div>
+
+            <!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+            <fieldset class="caixas">
+                <legend>Sexo:</legend>
+                <input id="feminino" type="radio" name="items" value="feminino">
+                <label for="feminino">Feminino</label>
+                <input id="masculino" type="radio" name="items" value="masculino">
+                <label for="masculino">Masculino</label>
+                <input id="nenhum" type="radio" name="items" value="nenhum">
+                <label for="nenhum">Prefiro Não Declarar</label>
+            </fieldset>
+
+            <!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+            <div class="caixas">
+                <label for="dropdown">Escolaridade: </label>
+                <select name="escolaridade" id="dropdown">
+                    <option value="Analfabeto">Analfabeto</option>
+                    <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                    <option value="Ensino Fundamental">Ensino Fundamental</option>
+                    <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                    <option value="Ensino Medio">Ensino Medio</option>
+                    <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                    <option value="Ensino Superior">Ensino Superior</option>
+                    <option value="Pos Graduacao Incompleta">Pós Graduação Incompleta</option>
+                    <option value="Pos Graduacao">Pós Graduação</option>
+                    <option value="Mestrado Incompleto">Mestrdo Incompleto</option>
+                    <option value="Mestrado">Mestrado</option>
+                    <option value="Doutorado Incompleto">Doutorado Incompleto</option>
+                    <option value="Doutorado">Doutorado</option>
+                    <option value="PHD">PHD (Pós Doutorado)</option>
+                </select>
+            </div>
+
+
+            <div class="caixas">
+
+                Selecione uma ou mais opções que melhor representem os meios de comunicação que você mais utiliza para
+                se informar:<br>
+
+                <!-- User Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+                <label for="revista-semanal-impressa"><input type="checkbox" id="revista-semanal-impressa" name="revista-semanal-impressa" value="revista semanal impressa"> Revista Semanal Impressa</label>
+                <br>
+                <label for="revista-semanal-digital"><input type="checkbox" id="revista-semanal-digital" name="revista-semanal-digital" value="revista semanal digital"> Revista Semanal Digital</label>
+                <br>
+                <label for="publicacoes-cientificas"><input type="checkbox" id="publicacoes-cientificas" name="publicacoes-cientificas" value="publicacoes cientificas"> Publicações Científicas</label>
+                <br>
+                <label for="jornal-impresso"><input type="checkbox" id="jornal-impresso" name="jornal-impresso" value="jornal-impresso"> Jornal Impresso</label>
+                <br>
+                <label for="jornal-digital"><input type="checkbox" id="jornal-digital" name="jornal-digital" value="jornal-digital"> Jornal Digital</label>
+                <br>
+                <label for="jornal-televisivo"><input type="checkbox" id="jornal-televisivo" name="jornal-televisivo" value="jornal-televisivo"> Jornal Televisivo</label>
+                <br>
+                <label for="redes-sociais"><input type="checkbox" id="redes-sociais" name="redes-sociais" value="redes-sociais"> Redes Sociais</label>
+                <br>
+                <label for="mensageiros-digitais"><input type="checkbox" id="mensageiros-digitais" name="mensageiros-digitais" value="mensageiros-digitais"> Mensageiros Digitais</label>
+                <br>
+                <label for="radio"><input type="checkbox" id="radio" name="radio" value="radio"> Radio</label>
+                <br>
+
+                <!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+                <label>Outros: <textarea cols="60"
+                        placeholder="Nos informe acaso você utilize outro meio de comunicação."></textarea></label>
+            </div>
+
+            <!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
+            <button id="submit" type="submit">ENVIAR</button>
+
+        </form>
+
+    </main>
+</body>
+<footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript">
+    </script>
+</footer>
+
+</html>

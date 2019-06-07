@@ -1,0 +1,85 @@
+html, body {
+    font-family: "Baskerville", Helvetica, sans-serif;
+    min-width: 260px;
+    background: #C2D2C4;
+    color: #0A384A;
+}
+
+h1{
+    font-family: 'Fira Mono', monospace;
+    text-align: center;
+    font-size: 65px;
+    color: #024253;
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    border: 1px outset #0A384A;
+}
+
+.fa-microchip{
+    color:  #609691;
+}
+
+#img-div{
+    padding-bottom: 5px;
+}
+
+#img-div, #source{
+    text-align: center;
+    font-family: 'Fira Mono', monospace;
+    padding-bottom: 10px;
+}
+
+#father{
+    font-family: 'Fira Mono', monospace;
+    text-align: center;
+    color: #1A3040;
+    margin-top: 0px;
+}
+#div-title{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 770px) { 
+    #conteudo{
+        max-width: 55%;
+        margin: auto;
+    }
+}
+
+ul{
+    list-style-position: inside;
+}
+
+li{
+    line-height: 25px;
+}
+
+a:visited { 
+    color: #024253;
+  }
+a:hover {
+    background-color: #609691;
+    color: #F4F3E1;
+  }
+
+/* 
+    #0A384A
+
+    #024253
+
+    #609691
+
+    #C2D2C4
+
+    #F4F3E1
+
+
+    exercicios: https://www.w3schools.com/css/exercise.asp?filename=exercise_border1
+*/

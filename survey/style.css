@@ -1,0 +1,57 @@
+html, body{
+  color: #101D29;
+  background: #AEC5D6;
+}
+
+form{
+  background: #E9F0F7;
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+
+input:invalid {
+  border: none;
+  border-bottom: 1px solid #D40424;
+}
+
+input:focus {
+  background-color: #AEC5D6;
+}
+
+/* default do fieldset */
+fieldset, .caixas { 
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: none;
+}
+textarea {
+  height: 1.75em;
+  box-sizing: border-box;
+  border: 2px solid #AEC5D6;
+  border-radius: 4px;
+  background-color: #E9F0F7;
+  resize: vertical;
+}
+
+/* Cores:
+
+#E9F0F7
+
+#AEC5D6
+
+#D40424
+
+#223040
+
+#101D29
+*/
